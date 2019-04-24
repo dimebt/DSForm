@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4601B7FE227074C900E53CCE /* DSFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA6630226DD35F002D007F /* DSFormTests.swift */; };
 		4671C217226E237100D0FE36 /* DSForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46DA6622226DD35E002D007F /* DSForm.framework */; };
 		469F0321226F006800D4999D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469F0320226F006800D4999D /* Constants.swift */; };
-		46DA6631226DD35F002D007F /* DSFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA6630226DD35F002D007F /* DSFormTests.swift */; };
 		46DA6633226DD35F002D007F /* DSForm.h in Headers */ = {isa = PBXBuildFile; fileRef = 46DA6625226DD35E002D007F /* DSForm.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46DA664B226DD596002D007F /* FormElement+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA663C226DD595002D007F /* FormElement+Protocols.swift */; };
 		46DA664C226DD596002D007F /* ButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA663D226DD595002D007F /* ButtonCollectionViewCell.swift */; };
@@ -26,16 +26,6 @@
 		46DA6657226DD596002D007F /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA6649226DD596002D007F /* UIButton.swift */; };
 		46DA6658226DD596002D007F /* LabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA664A226DD596002D007F /* LabelCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		46DA662D226DD35F002D007F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46DA6619226DD35E002D007F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 46DA6621226DD35E002D007F;
-			remoteInfo = DSForm;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		469F0320226F006800D4999D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -190,7 +180,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				46DA662E226DD35F002D007F /* PBXTargetDependency */,
 			);
 			name = DSFormTests;
 			productName = DSFormTests;
@@ -278,19 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46DA6631226DD35F002D007F /* DSFormTests.swift in Sources */,
+				4601B7FE227074C900E53CCE /* DSFormTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		46DA662E226DD35F002D007F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 46DA6621226DD35E002D007F /* DSForm */;
-			targetProxy = 46DA662D226DD35F002D007F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		46DA6634226DD35F002D007F /* Debug */ = {
