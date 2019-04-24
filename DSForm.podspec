@@ -18,7 +18,7 @@ Simple to use form builder framework for iOS. Build on top of UICollectionView.
   s.author             = { "Dimitar Stefanovski" => "dimebt_2005@hotmail.com" }
   s.social_media_url   = "https://www.instagram.com/dime_codes/"
 
-  s.platform     = :ios, "12.0"
+  s.platform     = :ios, "12.2"
 
   s.source       = { :git => "https://github.com/dimebt/DSForm.git", :tag => "1.0.4" }
 
