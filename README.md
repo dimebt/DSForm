@@ -11,6 +11,8 @@ Swift framework for creating dynamic forms.
 # DSForm
 
 Simple easy to implement iOS Swift framework for building forms.
+## Simulator Screencast
+![DSForm Screencast](https://github.com/dimebt/DSForm/blob/master/images/demo.gif?raw=true)
 
 ## Screenshot Simulator
 <img src="https://github.com/dimebt/DSForm/blob/master/images/screenshot_simulator.png" width="300">
