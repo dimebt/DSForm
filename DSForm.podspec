@@ -3,19 +3,14 @@ Pod::Spec.new do |s|
 
 
   s.name         = "DSForm"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of DSForm."
-
-  # This description is used to generate tags and improve search results.
-  #   * Think: What does it do? Why did you write it? What is the focus?
-  #   * Try to keep it short, snappy and to the point.
-  #   * Write the description between the DESC delimiters below.
-  #   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.version      = "1.0.4"
+  s.summary      = "Simple form library for iOS written in Swift"
   s.description  = <<-DESC
+Simple to use form builder framework for iOS. Build on top of UICollectionView.
                    DESC
 
-  s.homepage     = "http://EXAMPLE/DSForm"
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+  s.homepage     = "https://github.com/dimebt/DSForm"
+  s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
