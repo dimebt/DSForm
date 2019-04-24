@@ -24,8 +24,8 @@ Simple to use form builder framework for iOS. Build on top of UICollectionView.
   s.source       = { :git => "https://github.com/dimebt/DSForm.git", :tag => "1.0.4" }
 
 
-  s.source_files  = "**/*.{h,m,swift}"
-  s.exclude_files = "XCTest"
+  s.source_files  = "DSForm/**/*.{h,m,swift}"
+  s.exclude_files = "DSFormTests/**"
   #s.resources = "*.xib"
 
 end

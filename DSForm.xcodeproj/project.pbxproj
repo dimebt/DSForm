@@ -27,6 +27,16 @@
 		46DA6658226DD596002D007F /* LabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA664A226DD596002D007F /* LabelCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4601B7FF2270750E00E53CCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46DA6619226DD35E002D007F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46DA6621226DD35E002D007F;
+			remoteInfo = DSForm;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		469F0320226F006800D4999D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		46DA6622226DD35E002D007F /* DSForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DSForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,6 +190,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4601B8002270750E00E53CCE /* PBXTargetDependency */,
 			);
 			name = DSFormTests;
 			productName = DSFormTests;
@@ -272,6 +283,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4601B8002270750E00E53CCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46DA6621226DD35E002D007F /* DSForm */;
+			targetProxy = 4601B7FF2270750E00E53CCE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		46DA6634226DD35F002D007F /* Debug */ = {
