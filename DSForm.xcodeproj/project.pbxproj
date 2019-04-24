@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4671C217226E237100D0FE36 /* DSForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46DA6622226DD35E002D007F /* DSForm.framework */; };
-		469F031D226EE7C700D4999D /* DSFormViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469F031C226EE7C700D4999D /* DSFormViewControllerTests.swift */; };
 		469F0321226F006800D4999D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469F0320226F006800D4999D /* Constants.swift */; };
 		46DA6631226DD35F002D007F /* DSFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA6630226DD35F002D007F /* DSFormTests.swift */; };
 		46DA6633226DD35F002D007F /* DSForm.h in Headers */ = {isa = PBXBuildFile; fileRef = 46DA6625226DD35E002D007F /* DSForm.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		469F031C226EE7C700D4999D /* DSFormViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSFormViewControllerTests.swift; sourceTree = "<group>"; };
 		469F0320226F006800D4999D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		46DA6622226DD35E002D007F /* DSForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DSForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46DA6625226DD35E002D007F /* DSForm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSForm.h; sourceTree = "<group>"; };
@@ -126,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				46DA6630226DD35F002D007F /* DSFormTests.swift */,
-				469F031C226EE7C700D4999D /* DSFormViewControllerTests.swift */,
 				46DA6632226DD35F002D007F /* Info.plist */,
 			);
 			path = DSFormTests;
@@ -282,7 +279,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				46DA6631226DD35F002D007F /* DSFormTests.swift in Sources */,
-				469F031D226EE7C700D4999D /* DSFormViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
