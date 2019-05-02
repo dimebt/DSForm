@@ -12,7 +12,7 @@ Swift framework for creating dynamic forms.
 
 # DSForm
 
-Simple and easy to implement iOS Swift framework for building forms. It is builded on top of `UICollectionViewController` componenent. 
+Simple and easy to implement iOS Swift framework for building forms. It is builded on top of `UICollectionViewController` component. 
 
 Supports 4 basic types of form elements:
 
@@ -24,7 +24,8 @@ Supports 4 basic types of form elements:
 
 ## Example usage
 
-Create new `UICollectionVewController` and make it subbclass of `FormCollectionViewController`.
+* Create new `UICollectionVewController` and make it subbclass of `FormCollectionViewController`.
+* Set the `formDelegate` to `self` in `viewDidLoad()` method  so we can use the protocol `FormDelegate` methods in our class
 
 ```swift
 import UIKit
@@ -79,6 +80,7 @@ $ pod install
 * Add validation to `UITextField` (phone number, email address, numbers, regex, password etc...)
 * Add more styles to form elements
 * Add more Unit Tests
+* Add detailed documentation for every new feture
 
 ## Simulator Screencast
 ![DSForm Screencast](https://github.com/dimebt/DSForm/blob/master/images/demo.gif?raw=true)
