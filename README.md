@@ -17,11 +17,32 @@ Simple and easy to implement iOS Swift framework for building forms. It is build
 ## Example usage
 
 ## Requirements
+* Xcode 10.2
+* Swift 5.0
 
 ## Installation
+### [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html)
+
+```ruby
+# Podfile
+use_frameworks!
+
+target 'YOUR_TARGET_NAME' do
+    pod 'DSForm'
+end
+```
+
+Replace `YOUR_TARGET_NAME` and then, in the `Podfile` directory, type:
+
+```bash
+$ pod install
+```
+
 
 ## ToDo:
 * Add validation to UITextField (phone number, email address, numbers, regex, password etc...)
+* Add more styles to form elements
+* Add more Unit Tests
 
 ## Simulator Screencast
 ![DSForm Screencast](https://github.com/dimebt/DSForm/blob/master/images/demo.gif?raw=true)
