@@ -16,17 +16,17 @@ Simple and easy to implement iOS Swift framework for building forms. It is build
 
 Supports 4 basic types of form elements:
 
-1. 'FormElementTitle' (top title label of the form)
-2. 'FormElementButton' (subclass of UIButton control)
-3. 'FormElementTextField' (subclass of UITextField control)
-4. 'FormElementLabel' (subclass of UILabel control)
+1. `FormElementTitle` (top title label of the form)
+2. `FormElementButton` (subclass of UIButton control)
+3. `FormElementTextField` (subclass of UITextField control)
+4. `FormElementLabel` (subclass of UILabel control)
 
 
 ## Example usage
 
 Create new 'UICollectionVewController' and make it subbclass of 'FormCollectionViewController'.
 
-'''swift
+```swift
 import UIKit
 import DSForm
 
@@ -48,7 +48,7 @@ class ViewController: FormCollectionViewController, FormDelegate {
         print(fields)
     }
 }
-'''
+```
 
 
 ## Requirements
