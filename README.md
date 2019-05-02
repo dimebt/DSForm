@@ -24,8 +24,8 @@ Supports 4 basic types of form elements:
 
 ## Example usage
 
-* Create new `UICollectionVewController` and make it subbclass of `FormCollectionViewController`.
-* Set the `formDelegate` to `self` in `viewDidLoad()` method  so we can use the protocol `FormDelegate` methods in our class
+1. Create new `UICollectionVewController` and make it subbclass of `FormCollectionViewController`.
+2. Set the `formDelegate` to `self` in `viewDidLoad()` method  so we can use the protocol `FormDelegate` methods in our class.
 
 ```swift
 import UIKit
@@ -80,7 +80,7 @@ $ pod install
 * Add validation to `UITextField` (phone number, email address, numbers, regex, password etc...)
 * Add more styles to form elements
 * Add more Unit Tests
-* Add detailed documentation for every new feture
+* Add detailed documentation for every new feature
 
 ## Simulator Screencast
 ![DSForm Screencast](https://github.com/dimebt/DSForm/blob/master/images/demo.gif?raw=true)
