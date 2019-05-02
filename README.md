@@ -12,7 +12,17 @@ Swift framework for creating dynamic forms.
 
 # DSForm
 
-Simple and easy to implement iOS Swift framework for building forms.
+Simple and easy to implement iOS Swift framework for building forms. It is builded on top of UICollectionViewController componenent. 
+
+## Example usage
+
+## Requirements
+
+## Installation
+
+## ToDo:
+* Add validation to UITextField (phone number, email address, numbers, regex, password etc...)
+
 ## Simulator Screencast
 ![DSForm Screencast](https://github.com/dimebt/DSForm/blob/master/images/demo.gif?raw=true)
 
