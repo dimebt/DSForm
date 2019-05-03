@@ -82,8 +82,7 @@ DSForm supports 4 basic form elements inside our collection:
 ```swift
 let element1 = FormElementTitle(text: "Please Sign Up")
 ```
-
-
+![FormElementTitle](https://github.com/dimebt/DSForm/blob/master/images/FormElementTitle.png?raw=true)
 
 `FormElementTitle` available public properties:
 ```swift
@@ -94,6 +93,25 @@ let element1 = FormElementTitle(text: "Please Sign Up")
     public var text: String
 ```
 
+### `FormElementTextField`
+`FormElementTextField` supports user input and it is a subclass of the standard `UITextField` control.
+```swift
+var element2 = FormElementTextField(text: "Username")
+element2.topLabel = "Username"
+```
+![FormElementTextField](https://github.com/dimebt/DSForm/blob/master/images/FormElementTextField.png?raw=true)
+
+`FormElementTextField` available public properties:
+```swift
+    public var font: UIFont
+    public var identifier: String
+    public var backgroundColor: UIColor
+    public var fontColor: UIColor
+    public var topLabel: String
+    public var placeholder: String
+    public var validation: DSForm.FormValidation
+    public var text: String
+```
 
 
 ## ToDo:
