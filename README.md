@@ -22,6 +22,28 @@ Supports 4 basic types of form elements:
 4. `FormElementLabel` (subclass of `UILabel` control)
 
 
+## Requirements
+* Xcode 10.2
+* Swift 5.0
+
+## Installation
+### [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html)
+
+```ruby
+# Podfile
+use_frameworks!
+
+target 'YOUR_TARGET_NAME' do
+    pod 'DSForm'
+end
+```
+
+Replace `YOUR_TARGET_NAME` and then, in the `Podfile` directory, type:
+
+```bash
+$ pod install
+```
+
 ## Example usage
 
 1. Create new `UICollectionVewController` and make it subbclass of `FormCollectionViewController`.
@@ -51,27 +73,13 @@ class ViewController: FormCollectionViewController, FormDelegate {
 }
 ```
 
+## Form Elements
 
-## Requirements
-* Xcode 10.2
-* Swift 5.0
+DSForm supports 4 basic form elements inside our collection: 
 
-## Installation
-### [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html)
-
-```ruby
-# Podfile
-use_frameworks!
-
-target 'YOUR_TARGET_NAME' do
-    pod 'DSForm'
-end
-```
-
-Replace `YOUR_TARGET_NAME` and then, in the `Podfile` directory, type:
-
-```bash
-$ pod install
+1. `FormElementTitle' it is standard Label control
+```swift
+let element1 = FormElementTitle(text: "Please Sign Up")
 ```
 
 
