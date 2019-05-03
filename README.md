@@ -77,13 +77,15 @@ class ViewController: FormCollectionViewController, FormDelegate {
 
 DSForm supports 4 basic form elements inside our collection: 
 
-#### `FormElementTitle`
-`FormElementTitle` it is a subclass of the standard `UILabel` control.
+### `FormElementTitle`
+`FormElementTitle` it defines the title of the form and it is a subclass of the standard `UILabel` control.
 ```swift
 let element1 = FormElementTitle(text: "Please Sign Up")
 ```
 
-`FormElementTitle` available public properties
+
+
+`FormElementTitle` available public properties:
 ```swift
     public var font: UIFont
     public var identifier: String
