@@ -78,7 +78,7 @@ class ViewController: FormCollectionViewController, FormDelegate {
 DSForm supports 4 basic form elements inside our collection: 
 
 ### `FormElementTitle`
-`FormElementTitle` it defines the title of the form and it is a subclass of the standard `UILabel` control.
+It defines the title of the form and it is a subclass of the standard `UILabel` control.
 ```swift
 let element1 = FormElementTitle(text: "Please Sign Up")
 ```
@@ -94,7 +94,7 @@ let element1 = FormElementTitle(text: "Please Sign Up")
 ```
 
 ### `FormElementTextField`
-`FormElementTextField` supports user input and it is a subclass of the standard `UITextField` control.
+Supports user input and it is a subclass of the standard `UITextField` control.
 ```swift
 var element2 = FormElementTextField(text: "Username")
 element2.topLabel = "Username"
@@ -110,6 +110,38 @@ element2.topLabel = "Username"
     public var topLabel: String
     public var placeholder: String
     public var validation: DSForm.FormValidation
+    public var text: String
+```
+
+### `FormElementButton`
+Subclass of the standard `UIButton` control.
+```swift
+let element4 = FormElementButton(title: "Sign Up")
+```
+![FormElementButton](https://github.com/dimebt/DSForm/blob/master/images/FormElementButton.png?raw=true)
+
+`FormElementButton` available public properties:
+```swift
+    public var font: UIFont
+    public var identifier: String
+    public var backgroundColor: UIColor
+    public var fontColor: UIColor
+    public var title: String
+```
+
+### `FormElementLabel`
+Subclass of the standard `UILabel` control.
+```swift
+let element5 = FormElementLabel(text: "Sample text")
+```
+![FormElementLabel](https://github.com/dimebt/DSForm/blob/master/images/FormElementLabel.png?raw=true)
+
+`FormElementLabel` available public properties:
+```swift
+    public var font: UIFont
+    public var identifier: String
+    public var backgroundColor: UIColor
+    public var fontColor: UIColor
     public var text: String
 ```
 
