@@ -155,6 +155,7 @@ let element5 = FormElementLabel(text: "Sample text")
 
 ## Done:
 - [x] Add blank space (element) between form elements
+- [x] Add element size property
 
 ## Simulator Screencast
 ![DSForm Screencast](https://github.com/dimebt/DSForm/blob/master/images/demo.gif?raw=true)
