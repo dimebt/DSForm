@@ -154,8 +154,10 @@ let element5 = FormElementLabel(text: "Sample text")
 - [ ] Add detailed documentation for every new feature
 
 ## Done:
-- [x] Add blank space (element) between form elements
-- [x] Add element size property
+- [ ] Add blank space (element) between form elements
+- [x] Added element size property
+- [x] Added placeholder text to `FormElementTextField`
+- [x] Added new `.Line` style to `FormElementTextField`
 
 ## Simulator Screencast
 ![DSForm Screencast](https://github.com/dimebt/DSForm/blob/master/images/demo.gif?raw=true)
