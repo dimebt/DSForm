@@ -147,11 +147,11 @@ let element5 = FormElementLabel(text: "Sample text")
 
 
 ## ToDo:
-* Add support for more form elements and variations (image, checkmark, radio button etc...)
-* Add validation to `UITextField` (phone number, email address, numbers, regex, password etc...)
-* Add more styles to form elements
-* Add more Unit Tests
-* Add detailed documentation for every new feature
+- [ ] Add support for more form elements and variations (image, checkmark, radio button etc...)
+- [ ] validation to `UITextField` (phone number, email address, numbers, regex, password etc...)
+- [ ] more styles to form elements
+- [ ] more Unit Tests
+- [ ] detailed documentation for every new feature
 
 ## Done:
 - [x] Add blank space (element) between form elements
