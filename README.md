@@ -156,6 +156,7 @@ let element5 = FormElementLabel(text: "Sample text")
 ## Done:
 - [ ] Add blank space (element) between form elements
 - [x] Added element size property
+- [x] Added `CollectionView` `UIEdgeInsets` property
 - [x] Added placeholder text to `FormElementTextField`
 - [x] Added new `.Line` style to `FormElementTextField`
 
