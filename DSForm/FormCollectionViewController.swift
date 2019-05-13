@@ -31,6 +31,8 @@ open class FormCollectionViewController: UICollectionViewController, UICollectio
             collectionView.reloadData()
         }
     }
+    public var collectionViewEdgeInsets: UIEdgeInsets?
+    public var elementSize: CGSize?
     
     //  Private properties
     private var fieldsValues = [String:String]()
@@ -41,9 +43,12 @@ open class FormCollectionViewController: UICollectionViewController, UICollectio
         
         collectionView.dataSource = self
         collectionView.delegate = self
+        collectionView.delaysContentTouches = false
+        if let collectionViewEdgeInsets = collectionViewEdgeInsets {
+            collectionView.contentInset = collectionViewEdgeInsets
+        }
         
         registerNibs()
-
     }
     
     
@@ -86,7 +91,10 @@ open class FormCollectionViewController: UICollectionViewController, UICollectio
     
     //  MARK: - Set cell sizes
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return FormCellSizes().calculate()
+        guard let elementSize = self.elementSize else {
+            return FormCellSizes().calculate()
+        }
+        return elementSize
     }
     
     
