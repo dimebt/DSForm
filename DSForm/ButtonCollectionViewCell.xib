@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view multipleTouchEnabled="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="ButtonCollectionViewCell" customModule="FormTest" customModuleProvider="target">
+        <view multipleTouchEnabled="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="ButtonCollectionViewCell" customModule="DSForm" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="429" height="126"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AI8-5h-LlI" customClass="SignInButton" customModule="FormTest" customModuleProvider="target">
-                    <rect key="frame" x="191.5" y="48" width="46" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AI8-5h-LlI" customClass="SignInButton" customModule="DSForm" customModuleProvider="target">
+                    <rect key="frame" x="10" y="5" width="409" height="116"/>
                     <state key="normal" title="Button"/>
                     <connections>
                         <action selector="buttonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="QWI-l8-RC8"/>
@@ -26,7 +26,11 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AI8-5h-LlI" secondAttribute="trailing" constant="10" id="F3O-xK-37K"/>
+                <constraint firstItem="AI8-5h-LlI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="Sbs-m6-VDU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="AI8-5h-LlI" secondAttribute="bottom" constant="5" id="SiA-SP-Npf"/>
                 <constraint firstItem="AI8-5h-LlI" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ZhA-uD-9ui"/>
+                <constraint firstItem="AI8-5h-LlI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="mPi-vF-TXq"/>
                 <constraint firstItem="AI8-5h-LlI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mgs-Ek-VhC"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

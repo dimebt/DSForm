@@ -54,13 +54,25 @@ class SignInButton: UIButton {
         commoninit()
     }
     
-    private func commoninit() {        
-        self.backgroundColor = UIColor.white.withAlphaComponent(0.25)
+    private func commoninit() {
         self.titleLabel?.textAlignment = .center
         self.layer.cornerRadius = 5
         self.contentEdgeInsets = UIEdgeInsets(top: 5, left: 20, bottom: 5, right: 20
         )
     }
-        
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let backroundColor = self.backgroundColor {
+            self.backgroundColor = backroundColor.withAlphaComponent(0.35)
+        }
+        super.touchesBegan(touches, with: event)
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let backroundColor = self.backgroundColor {
+            self.backgroundColor = backroundColor.withAlphaComponent(0.25)
+        }
+        super.touchesEnded(touches, with: event)
+    }
     
 }

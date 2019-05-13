@@ -24,8 +24,9 @@ class TextFieldCollectionViewCell: UICollectionViewCell {
         self.textField.textColor = field.fontColor
         self.textFieldLabel.text = field.topLabel
         self.textField.placeholder = field.placeholder
+        self.textField.placeholderColor = field.fontColor
         self.textFieldIdentifier = field.identifier
-        self.textField.backgroundColor = field.backgroundColor.withAlphaComponent(0.04)
+        self.textField.backgroundColor = field.backgroundColor
         self.textField.font = field.font
         self.textFieldLabel.font = field.font
         switch field.validation {
@@ -34,7 +35,7 @@ class TextFieldCollectionViewCell: UICollectionViewCell {
             break
         default:
             self.textField.isSecureTextEntry = false
-        }        
+        }
     }
 }
 

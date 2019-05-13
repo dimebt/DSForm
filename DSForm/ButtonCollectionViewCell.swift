@@ -22,6 +22,11 @@ class ButtonCollectionViewCell: UICollectionViewCell {
     public func configure(field: FormElementButton) {        
         self.button.setTitle(field.title, for: .normal)
         self.button.setTitleColor(field.fontColor, for: .normal)
+        if field.backgroundColor == UIColor.clear {
+            self.button.backgroundColor = UIColor.white.withAlphaComponent(0.25)
+        } else {
+            self.button.backgroundColor = field.backgroundColor
+        }
         self.buttonIdentifier = field.identifier
     }
     

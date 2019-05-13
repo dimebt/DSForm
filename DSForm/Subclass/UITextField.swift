@@ -12,8 +12,8 @@ class UITextFieldStyleUnderline: UITextField {
     
     let bottomLine: UIView = UIView()
     var placeholderAlpha: CGFloat = 0.45
-    var bottomLineMultiplier: CGFloat = 0.14
-    
+    var placeholderColor: UIColor = UIColor.white
+    var bottomLineMultiplier: CGFloat = 0.06
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -34,13 +34,16 @@ class UITextFieldStyleUnderline: UITextField {
     private func commoninit() {        
         self.addSubview(self.bottomLine)
         self.borderStyle = .none
-    }
-    
-    
+    }    
     
     override func layoutSubviews() {
+        super.layoutSubviews()
         self.bottomLine.frame = CGRect(x: 0, y: self.bounds.height + self.frame.height * bottomLineMultiplier, width: self.frame.width, height: self.frame.height * -bottomLineMultiplier)
-        self.bottomLine.backgroundColor = UIColor.white.withAlphaComponent(placeholderAlpha)
+        self.bottomLine.backgroundColor = placeholderColor.withAlphaComponent(placeholderAlpha)
+        
+        if let placeholder = placeholder {
+            self.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.foregroundColor: placeholderColor.withAlphaComponent(placeholderAlpha)])
+        }
     }
     
     

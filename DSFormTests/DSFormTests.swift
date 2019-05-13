@@ -22,35 +22,35 @@ class DSFormTests: XCTestCase {
     func testFormCellSizesIphone45S() {
         let mock_Iphone45SSize = FormCellSizes(screenBounds: CGRect(x: 0, y: 0, width: 320, height: 0))
         let cellSize = mock_Iphone45SSize.calculate()
-        let expectedCellSize = CGSize(width: 320 - 10, height: 60.0)
+        let expectedCellSize = CGSize(width: 320 - 80, height: 44.0)
         XCTAssertEqual(cellSize, expectedCellSize, "iPhone45S cell size")
     }
     
     func testFormCellSizesIphone678X() {
         let mock_Iphone678XSize = FormCellSizes(screenBounds: CGRect(x: 0, y: 0, width: 375, height: 0))
         let cellSize = mock_Iphone678XSize.calculate()
-        let expectedCellSize = CGSize(width: 375 - 10, height: 75.0)
+        let expectedCellSize = CGSize(width: 375 - 100, height: 44.0)
         XCTAssertEqual(cellSize, expectedCellSize, "iPhone678X cell size")
     }
     
     func testFormCellSizesIphone78Plus() {
         let mock_Iphone78PlusSize = FormCellSizes(screenBounds: CGRect(x: 0, y: 0, width: 414, height: 0))
         let cellSize = mock_Iphone78PlusSize.calculate()
-        let expectedCellSize = CGSize(width: 414 - 10, height: 80.0)
+        let expectedCellSize = CGSize(width: 414 - 140, height: 50.0)
         XCTAssertEqual(cellSize, expectedCellSize, "iPhone78Plus cell size")
     }
     
     func testFormCellSizesiPad9inch() {
         let mock_iPad9inch = FormCellSizes(screenBounds: CGRect(x: 0, y: 0, width: 768, height: 0))
         let cellSize = mock_iPad9inch.calculate()
-        let expectedCellSize = CGSize(width: 768 - 10, height: 85.0)
+        let expectedCellSize = CGSize(width: 768 - 360, height: 60)
         XCTAssertEqual(cellSize, expectedCellSize, "iPad9inch cell size")
     }
     
     func testFormCellSizesUnknown() {
         let mock_UnknownScreen = FormCellSizes(screenBounds: CGRect(x: 0, y: 0, width: 100, height: 0))
         let cellSize = mock_UnknownScreen.calculate()
-        let expectedCellSize = CGSize(width: 100 - 10, height: 65.0)
+        let expectedCellSize = CGSize(width: 100 - 100, height: 44)
         XCTAssertEqual(cellSize, expectedCellSize, "Unknown Device cell size")
     }
     

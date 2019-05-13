@@ -16,15 +16,15 @@ extension FormCellSizing {
     public func calculate() -> CGSize {
         switch screenBounds.width {
         case 300...350:
-            return CGSize(width: screenBounds.width - 10, height: 60)
+            return CGSize(width: screenBounds.width - 80, height: 44)
         case 351...400:
-            return CGSize(width: screenBounds.width - 10, height: 75)
+            return CGSize(width: screenBounds.width - 100, height: 44)
         case 401...420:
-            return CGSize(width: screenBounds.width - 10, height: 80)
+            return CGSize(width: screenBounds.width - 140, height: 50)
         case 421...3000:
-            return CGSize(width: screenBounds.width - 10, height: 85) 
+            return CGSize(width: screenBounds.width - 360, height: 60)
         default:
-            return CGSize(width: screenBounds.width - 10, height: 65)
+            return CGSize(width: screenBounds.width - 100, height: 44)
         }
     }
 }

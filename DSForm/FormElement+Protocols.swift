@@ -23,7 +23,7 @@ public enum FormValidation {
 }
 
 public enum FormStyle {
-    case Dark, Light
+    case Dark, Light, Line
 }
 
 
@@ -44,6 +44,9 @@ extension FormElement {
         case .Dark:
             self.backgroundColor = .black
             self.fontColor = .black
+        case .Line:
+            self.backgroundColor = .clear
+            self.fontColor = .white
         }
     }
 }
@@ -61,6 +64,7 @@ public struct FormElementButton: FormElement {
     
     public init(title: String) {
         self.title = title
+        self.identifier = title.replacingOccurrences(of: " ", with: "").lowercased()
     }
 }
 
@@ -81,7 +85,8 @@ public struct FormElementTextField: FormElement {
     
     public init(text: String) {
         self.text = text
-        self.placeholder = text
+        self.placeholder = " " + text
+        self.identifier = text.replacingOccurrences(of: " ", with: "").lowercased()
     }
 }
 
