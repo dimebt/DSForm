@@ -147,6 +147,7 @@ let element5 = FormElementLabel(text: "Sample text")
 
 
 ## ToDo:
+- [ ] Reference the delegate property with @IBOutlet for easy connection from Xcode interface builder
 - [ ] Add support for more form elements and variations (image, checkmark, radio button etc...)
 - [ ] Add validation to `UITextField` (phone number, email address, numbers, regex, password etc...)
 - [ ] Add more styles to form elements
