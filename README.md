@@ -11,6 +11,7 @@
 Swift framework for creating dynamic forms.
 
 # DSForm
+![DSForm Screencast](https://github.com/dimebt/DSForm/blob/master/images/demo.gif?raw=true)
 
 Simple and easy to implement iOS Swift framework for building forms. It is builded on top of `UICollectionViewController` component. 
 
@@ -160,9 +161,6 @@ let element5 = FormElementLabel(text: "Sample text")
 - [x] Added `CollectionView` `UIEdgeInsets` property
 - [x] Added placeholder text to `FormElementTextField`
 - [x] Added new `.Line` style to `FormElementTextField`
-
-## Simulator Screencast
-![DSForm Screencast](https://github.com/dimebt/DSForm/blob/master/images/demo.gif?raw=true)
 
 ## Screenshot Simulator
 <img src="https://github.com/dimebt/DSForm/blob/master/images/screenshot_simulator.png" width="300">
